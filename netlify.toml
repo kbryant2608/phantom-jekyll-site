@@ -1,7 +1,10 @@
 [build]
-  command = "bundle _2.2.0_ exec jekyll build"
+  command = "bundle exec jekyll build"
   publish = "_site"
 
 [build.environment]
   BUNDLE_VERSION = "2.2.0"
   RUBY_VERSION = "2.7.2"
+
+[functions]
+  node_bundler = "esbuild"
